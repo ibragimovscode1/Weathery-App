@@ -58,7 +58,7 @@ extension WeatherVC {
         rootStackView.translatesAutoresizingMaskIntoConstraints = false
         rootStackView.axis = .vertical
         rootStackView.alignment = .center
-        rootStackView.spacing = 10
+        rootStackView.spacing = 35
 
         // search
         searchStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -97,7 +97,7 @@ extension WeatherVC {
 
         // background
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.image = UIImage(named: "background")
+        backgroundView.image = UIImage(named: "day-background")
         backgroundView.contentMode = .scaleAspectFill
     }
     
@@ -185,7 +185,7 @@ extension WeatherVC: UITextFieldDelegate {
 }
 
 // MARK: - CLLocationManagerDelegate
-extension WeatherViewController: CLLocationManagerDelegate {
+extension WeatherVC: CLLocationManagerDelegate {
     
     @objc func locationPressed(_ sender: UIButton) {
         locationManager.requestLocation()
@@ -206,7 +206,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
 }
 
 // MARK: - WeatherManagerDelegate
-extension WeatherViewController: WeatherServiceDelegate {
+extension WeatherVC: WeatherServiceDelegate {
     
     func didFetchWeather(_ weatherService: WeatherService, _ weather: WeatherModel) {
         self.temperatureLabel.attributedText = self.makeTemperatureText(with: weather.temperatureString)
