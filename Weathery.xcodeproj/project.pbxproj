@@ -12,6 +12,7 @@
 		5234B2F4287EEC690040BBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5234B2F3287EEC690040BBB6 /* Assets.xcassets */; };
 		5234B2F7287EEC690040BBB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5234B2F5287EEC690040BBB6 /* LaunchScreen.storyboard */; };
 		5234B2FF287EF42F0040BBB6 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234B2FE287EF42F0040BBB6 /* WeatherService.swift */; };
+		5234B301287EF4830040BBB6 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234B300287EF4830040BBB6 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5234B2F6287EEC690040BBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5234B2F8287EEC690040BBB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5234B2FE287EF42F0040BBB6 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		5234B300287EF4830040BBB6 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				5234B2EA287EEC640040BBB6 /* AppDelegate.swift */,
 				5234B2EE287EEC640040BBB6 /* WeatherVC.swift */,
+				5234B2FE287EF42F0040BBB6 /* WeatherService.swift */,
+				5234B300287EF4830040BBB6 /* WeatherModel.swift */,
 				5234B2F3287EEC690040BBB6 /* Assets.xcassets */,
 				5234B2F5287EEC690040BBB6 /* LaunchScreen.storyboard */,
 				5234B2F8287EEC690040BBB6 /* Info.plist */,
-				5234B2FE287EF42F0040BBB6 /* WeatherService.swift */,
 			);
 			path = Weathery;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				5234B2EF287EEC640040BBB6 /* WeatherVC.swift in Sources */,
 				5234B2FF287EF42F0040BBB6 /* WeatherService.swift in Sources */,
+				5234B301287EF4830040BBB6 /* WeatherModel.swift in Sources */,
 				5234B2EB287EEC640040BBB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
